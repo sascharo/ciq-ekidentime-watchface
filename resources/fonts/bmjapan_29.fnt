@@ -1,0 +1,16 @@
+info face="BM japan" size=29 bold=0 italic=0 charset="" unicode=1 stretchH=100 smooth=0 aa=1 padding=0,0,0,0 spacing=1,1 outline=0
+common lineHeight=29 base=22 scaleW=128 scaleH=128 pages=1 packed=0 alphaChnl=0 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="bmjapan_29_0.png"
+chars count=12
+char id=32   x=115   y=20    width=3     height=1     xoffset=-1    yoffset=28    xadvance=12    page=0  chnl=15
+char id=37   x=0     y=0     width=24    height=19    xoffset=0     yoffset=3     xadvance=27    page=0  chnl=15
+char id=48   x=25    y=0     width=22    height=19    xoffset=0     yoffset=3     xadvance=24    page=0  chnl=15
+char id=49   x=117   y=0     width=7     height=19    xoffset=0     yoffset=3     xadvance=10    page=0  chnl=15
+char id=50   x=48    y=0     width=22    height=19    xoffset=0     yoffset=3     xadvance=24    page=0  chnl=15
+char id=51   x=71    y=0     width=22    height=19    xoffset=0     yoffset=3     xadvance=24    page=0  chnl=15
+char id=52   x=94    y=0     width=22    height=19    xoffset=0     yoffset=3     xadvance=24    page=0  chnl=15
+char id=53   x=0     y=20    width=22    height=19    xoffset=0     yoffset=3     xadvance=24    page=0  chnl=15
+char id=54   x=23    y=20    width=22    height=19    xoffset=0     yoffset=3     xadvance=24    page=0  chnl=15
+char id=55   x=46    y=20    width=22    height=19    xoffset=0     yoffset=3     xadvance=24    page=0  chnl=15
+char id=56   x=69    y=20    width=22    height=19    xoffset=0     yoffset=3     xadvance=24    page=0  chnl=15
+char id=57   x=92    y=20    width=22    height=19    xoffset=0     yoffset=3     xadvance=24    page=0  chnl=15

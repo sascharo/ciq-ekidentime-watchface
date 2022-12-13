@@ -1,0 +1,23 @@
+<resources>
+    <bitmap id="id_hakone_dt" filename="images/lm1_240x240.png" dithering="none" compress="false">
+    	<palette disableTransparency="true">
+    		<color>000000</color>
+    		<color>555555</color>
+    	</palette>
+    </bitmap>
+    <bitmap id="id_hakone_tt" filename="images/lm1_240x240.png" dithering="none" compress="false">
+    	<palette disableTransparency="true">
+    		<color>000000</color>
+    		<color>555555</color>
+    		<color>AAAAAA</color>
+    	</palette>
+    </bitmap>
+    <bitmap id="id_hakone" filename="images/lm1_240x240.png" dithering="none" compress="false" automaticPalette="true">
+    </bitmap>
+	<bitmap id="id_hakone_ep" filename="images/lm1_240x240.png" dithering="none" compress="false">
+    	<palette disableTransparency="true">
+    		<color>0000AA</color>
+    		<color>FFFF00</color>
+    	</palette>
+    </bitmap>
+</resources>

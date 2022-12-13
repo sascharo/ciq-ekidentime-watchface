@@ -1,0 +1,18 @@
+<properties>
+
+	<property id="BGMode" type="number">1</property>
+
+	<property id="Date" type="boolean">true</property>
+	<property id="DateColor" type="number">0xFFFF00</property>
+	<property id="DateYear" type="number">0</property>
+	
+    <property id="HoursColor" type="number">0xFFFF00</property>
+    <property id="MinutesColor" type="number">0xCCFFCC</property>
+    
+    <property id="Steps" type="boolean">true</property>
+    <property id="StepsColor" type="number">0x0066FF</property>
+    
+    <property id="BatteryStatus" type="boolean">true</property>
+    <property id="BatteryColor" type="number">0xCCFFCC</property>
+
+</properties>

@@ -1,0 +1,8 @@
+<fonts>
+	<font id="time" filename="chineserocks_160s.fnt" filter="0123456789" antialias="true" />
+	<font id="battery" filename="asianhiro_34s.fnt" filter="0123456789" />
+	<font id="batteryIcons" filename="connecticons_32.fnt" />
+	<font id="date" filename="bmjapan_19.fnt" />
+	<font id="steps" filename="bmjapan_17.fnt" filter="0123456789" />
+	<font id="stepsIcons" filename="connecticons_21.fnt" />
+</fonts>

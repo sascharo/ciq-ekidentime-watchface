@@ -1,0 +1,6 @@
+info face="connect-icons" size=34 bold=0 italic=0 charset="" unicode=1 stretchH=100 smooth=0 aa=1 padding=0,0,0,0 spacing=1,1 outline=0
+common lineHeight=34 base=27 scaleW=64 scaleH=64 pages=1 packed=0 alphaChnl=0 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="connecticons_34_0.png"
+chars count=2
+char id=48   x=13    y=0     width=26    height=13    xoffset=0     yoffset=13    xadvance=26    page=0  chnl=15
+char id=49   x=0     y=0     width=12    height=26    xoffset=7     yoffset=6     xadvance=26    page=0  chnl=15

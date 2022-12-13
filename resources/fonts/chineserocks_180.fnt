@@ -1,0 +1,22 @@
+info face="Chinese Rocks Rg" size=180 bold=0 italic=0 charset="" unicode=1 stretchH=100 smooth=0 aa=1 padding=0,0,0,0 spacing=1,1 outline=0
+common lineHeight=180 base=142 scaleW=256 scaleH=256 pages=2 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="chineserocks_180_0.png"
+page id=1 file="chineserocks_180_1.png"
+chars count=10
+char id=48   x=0     y=113   width=58    height=110   xoffset=5     yoffset=32    xadvance=68    page=0  chnl=15
+char id=49   x=181   y=0     width=31    height=111   xoffset=6     yoffset=30    xadvance=44    page=0  chnl=15
+char id=50   x=0     y=0     width=55    height=106   xoffset=3     yoffset=32    xadvance=62    page=1  chnl=15
+char id=51   x=177   y=113   width=57    height=107   xoffset=5     yoffset=33    xadvance=66    page=0  chnl=15
+char id=52   x=56    y=0     width=56    height=105   xoffset=5     yoffset=36    xadvance=64    page=1  chnl=15
+char id=53   x=59    y=113   width=58    height=109   xoffset=5     yoffset=32    xadvance=68    page=0  chnl=15
+char id=54   x=62    y=0     width=59    height=112   xoffset=6     yoffset=30    xadvance=70    page=0  chnl=15
+char id=55   x=0     y=0     width=61    height=112   xoffset=4     yoffset=29    xadvance=70    page=0  chnl=15
+char id=56   x=118   y=113   width=58    height=109   xoffset=5     yoffset=31    xadvance=68    page=0  chnl=15
+char id=57   x=122   y=0     width=58    height=112   xoffset=6     yoffset=30    xadvance=70    page=0  chnl=15
+kernings count=6
+kerning first=57  second=55  amount=-8  
+kerning first=55  second=52  amount=-15 
+kerning first=55  second=49  amount=-7  
+kerning first=54  second=55  amount=-8  
+kerning first=52  second=55  amount=-11 
+kerning first=52  second=49  amount=-14 
