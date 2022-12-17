@@ -1,21 +1,21 @@
 <resources>
-	<bitmap id="id_launchericon_30x30" filename="images/launchericon.0.0.1.30x30.png" dithering="none" compress="false"></bitmap>
-	<bitmap id="id_hakone_dt" filename="images/lm1_218x218.png" dithering="none" compress="false">
+	<bitmap id="id_launchericon_40x40" filename="images/launcherIcon_40x40.png" dithering="none" compress="false"></bitmap>
+	<bitmap id="id_hakone_dt" filename="images/lm1_208x208.png" dithering="none" compress="false">
     	<palette disableTransparency="true">
     		<color>000000</color>
     		<color>555555</color>
     	</palette>
     </bitmap>
-    <bitmap id="id_hakone_tt" filename="images/lm1_218x218.png" dithering="none" compress="false">
+    <bitmap id="id_hakone_tt" filename="images/lm1_208x208.png" dithering="none" compress="false">
     	<palette disableTransparency="true">
     		<color>000000</color>
     		<color>555555</color>
     		<color>AAAAAA</color>
     	</palette>
     </bitmap>
-	<bitmap id="id_hakone" filename="images/lm1_218x218.png" dithering="none" compress="false" automaticPalette="true">
+	<bitmap id="id_hakone" filename="images/lm1_208x208.png" dithering="none" compress="false" automaticPalette="true">
     </bitmap>
-	<bitmap id="id_hakone_ep" filename="images/lm1_218x218.png" dithering="none" compress="false">
+	<bitmap id="id_hakone_ep" filename="images/lm1_208x208.png" dithering="none" compress="false">
     	<palette disableTransparency="true">
     		<color>0000AA</color>
     		<color>FFFF00</color>
