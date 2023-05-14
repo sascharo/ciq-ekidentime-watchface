@@ -22,7 +22,7 @@ class ciq_ekidenTime_watchfaceView extends WatchUi.WatchFace {
     function onLayout(dc) {
         setLayout(Rez.Layouts.WatchFace(dc));
         
-        switch (Application.getApp().getProperty("BGMode")) {
+        switch (Application.Properties.getValue("BGMode")) {
         	case 0:
         		bgbitmap = WatchUi.loadResource(Rez.Drawables.id_hakone_dt);
         		break;
@@ -56,20 +56,20 @@ class ciq_ekidenTime_watchfaceView extends WatchUi.WatchFace {
         
 	    dc.drawBitmap(halfwidth-(bgbitmap.getWidth()/2), halfheight-(bgbitmap.getHeight()/2), bgbitmap);
 	    
-	    if (Application.getApp().getProperty("Date")) {
+	    if (Application.Properties.getValue("Date")) {
 		    var gregorian = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
 		    var date = null;
-		    if (Application.getApp().getProperty("DateYear") > 1) {
+		    if (Application.Properties.getValue("DateYear") > 1) {
 		    	date = Lang.format("$1$ $2$", [gregorian.day, gregorian.month.toUpper()]);
 		    } else {
 		    	var year = gregorian.year;
-		    	if (Application.getApp().getProperty("DateYear") > 0) {
+		    	if (Application.Properties.getValue("DateYear") > 0) {
 				    year = year.toString().substring(2, 4);
 				}
 				date = Lang.format("$1$ $2$ $3$", [gregorian.day, gregorian.month.toUpper(), year]);
 			}
 		    //var date = Lang.format("$1$ $2$ $3$", [gregorian.day, gregorian.month.toUpper(), year]);
-	    	dc.setColor(Application.getApp().getProperty("DateColor"), Graphics.COLOR_TRANSPARENT);
+	    	dc.setColor(Application.Properties.getValue("DateColor"), Graphics.COLOR_TRANSPARENT);
 	    	dc.drawText(halfwidth, halfheight-Math.ceil(halfheight/1.333), fontDate, date, Graphics.TEXT_JUSTIFY_CENTER);
 	    }
 	    
@@ -82,25 +82,25 @@ class ciq_ekidenTime_watchfaceView extends WatchUi.WatchFace {
         }
         var halfwidthoffset = halfwidth/30;
         var halfheightwithoffset = halfheight-80;
-        dc.setColor(Application.getApp().getProperty("HoursColor"), Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Application.Properties.getValue("HoursColor"), Graphics.COLOR_TRANSPARENT);
         //dc.setColor(0x00003b, Graphics.COLOR_TRANSPARENT);
         dc.drawText(halfwidth-halfwidthoffset, halfheightwithoffset, fontTime, hours.toString(), Graphics.TEXT_JUSTIFY_RIGHT);
-        dc.setColor(Application.getApp().getProperty("MinutesColor"), Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Application.Properties.getValue("MinutesColor"), Graphics.COLOR_TRANSPARENT);
         dc.drawText(halfwidth+halfwidthoffset, halfheightwithoffset, fontTime, Lang.format("$1$", [clockTime.min.format("%02d")]), Graphics.TEXT_JUSTIFY_LEFT);
         
         var steps = ActivityMonitor.getInfo().steps;
         //steps = 208;
-        if (Application.getApp().getProperty("Steps") && steps != null) {
+        if (Application.Properties.getValue("Steps") && steps != null) {
         	var fontStepsbase = 13+1;
         	var stepswidthoffset = ((fontStepsbase*steps.toString().length())*0.5)+fontStepsbase;
         	var connecticonsoffset = 17*0.5;
         	var stepsheight = halfheight+Math.ceil(halfheight/2.25);
-        	dc.setColor(Application.getApp().getProperty("StepsColor"), Graphics.COLOR_TRANSPARENT);
+        	dc.setColor(Application.Properties.getValue("StepsColor"), Graphics.COLOR_TRANSPARENT);
         	dc.drawText(halfwidth-(stepswidthoffset-connecticonsoffset), stepsheight-4, fontStepsIcons, "0", Graphics.TEXT_JUSTIFY_CENTER);
         	dc.drawText(halfwidth+connecticonsoffset, stepsheight, fontSteps, steps.toString(), Graphics.TEXT_JUSTIFY_CENTER);
         }
         
-        if (Application.getApp().getProperty("BatteryStatus")) {
+        if (Application.Properties.getValue("BatteryStatus")) {
         	stats = System.getSystemStats();
         	//var batterylife = Lang.format("$1$", [stats.battery.format("%01d")]);
         	var batterylife = stats.battery.format("%01d").toString();
@@ -109,7 +109,7 @@ class ciq_ekidenTime_watchfaceView extends WatchUi.WatchFace {
         	var batterylifewidthoffset = ((fontBatterybase*batterylife.length())*0.5)+(fontBatterybase*0.5);
         	var connecticonsoffset = 26*0.5;
         	var batterylifeheight = halfheight+Math.ceil(halfheight/1.5);
-        	dc.setColor(Application.getApp().getProperty("BatteryColor"), Graphics.COLOR_TRANSPARENT);
+        	dc.setColor(Application.Properties.getValue("BatteryColor"), Graphics.COLOR_TRANSPARENT);
         	dc.drawText(halfwidth-(batterylifewidthoffset-connecticonsoffset), batterylifeheight-6, fontBatteryIcons, "0", Graphics.TEXT_JUSTIFY_CENTER);
         	dc.drawText(halfwidth+connecticonsoffset, batterylifeheight, fontBattery, batterylife, Graphics.TEXT_JUSTIFY_CENTER);
         }
