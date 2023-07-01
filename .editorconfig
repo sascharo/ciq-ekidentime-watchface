@@ -1,0 +1,4 @@
+root = true
+
+[*]
+guidelines = 80 dashed, 120
